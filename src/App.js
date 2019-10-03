@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <img src={tumbling}/>
+      <img style={{marginRight:'8%'}} src={tumbling}/>
         ACE GYMNASTICS!! COMING SOON!!
       </header>
     </div>
