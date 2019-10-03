@@ -21,3 +21,13 @@
 .App-link {
   color: #09d3ac;
 }
+
+img {
+  margin-right:8%;
+}
+
+@media only screen and (max-width:500px) {
+  img {
+    margin-right:20%;
+  }
+}
