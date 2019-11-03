@@ -10,9 +10,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={tumbling} />
-        ACE GYMNASTICS!! COMING SOON!!
+        <h2>ACE GYMNASTICS!! COMING SOON!!</h2>
         <div>
-          <h3>Open House:</h3>
+          <h4>Open House:</h4>
           <p>December 7th, 1pm - 3pm</p>
         </div>
         <div className='icon-logos'>
