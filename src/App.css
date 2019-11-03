@@ -31,3 +31,13 @@ img {
     margin-right:20%;
   }
 }
+
+.icon-logos {
+  display:flex;
+  width:50%;
+  justify-content: space-evenly;
+}
+
+a {
+  color:white;
+}
