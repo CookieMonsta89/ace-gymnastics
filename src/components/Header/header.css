@@ -1,5 +1,6 @@
 :root {
-	--red-color: #9a0b0b;
+	--red-color: #a02424;
+	/* #9a0b0b */
 }
 
 .header-container {
@@ -35,12 +36,12 @@
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	padding: 0 8rem;
+	padding: 0 10%;
 	height: 100%;
 }
 
 .logo-container {
-	width: 15%;
+	width: 10%;
 	height: 100%;
 }
 
@@ -69,13 +70,13 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	width: 25%;
+	width: 20%;
 	height: 95%;
-	font-size: 1.2rem;
+	font-size: 0.75vw;
 }
 
 .navlink:hover {
-	border-bottom: 3px solid white;
+	border-bottom: 1px solid white;
 	margin-bottom: 5px;
 	transition: all 0.5s;
 	cursor: pointer;
@@ -85,11 +86,13 @@ a.link {
 	color: white;
 	text-decoration: none;
 	border-bottom: 0px solid white !important;
+	width: 100%;
 }
 
 a.link:hover {
 	color: white;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 a.link:focus {
@@ -105,11 +108,15 @@ a.link:active {
 /* Smaller Desktop screen sizing */
 @media screen and (max-width: 1300px) {
 	.link-container {
-		padding: 1rem 3rem;
+		padding: 0 2rem;
 	}
 
 	.logo-container {
-		width: 20%;
+		width: 15%;
+	}
+
+	.navlink {
+		font-size: 1vw;
 	}
 }
 
@@ -122,7 +129,7 @@ a.link:active {
 	}
 
 	.logo-container {
-		width: 30%;
+		width: 20%;
 		height: 15%;
 		margin: 1rem;
 	}
@@ -144,8 +151,7 @@ a.link:active {
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-		height: 85%;
-		height: 50vh;
+		height: 80vh;
 	}
 
 	.navlink {
@@ -153,6 +159,7 @@ a.link:active {
 		width: 100%;
 		border-top: 1px solid white;
 		align-items: center;
+		font-size: 3vw;
 	}
 
 	.navlink:hover {
@@ -169,7 +176,21 @@ a.link:active {
 	a.link:focus {
 		color: var(--red-color);
 	}
+
+	a.link:hover {
+		color: var(--red-color);
+	}
+
+	a.link {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media screen and (max-width: 414px) {
+	.navlink {
+		font-size: 4vw;
+	}
 }

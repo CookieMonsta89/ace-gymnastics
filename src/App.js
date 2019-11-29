@@ -1,17 +1,28 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/header";
+import Header from "./components/Header/Header";
 import { Route } from "react-router-dom";
 import Home from "./containers/Home/Home";
+import ContactHeader from "./components/Header/contactheader";
 
-function App() {
-	return (
-		<div className="App">
-			<Header />
-			<Route exact path="/" component={Home} />
-			<Route path="/About" />
-		</div>
-	);
+class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
+
+	render() {
+		return (
+			<div className="App">
+				<ContactHeader />
+				<Header />
+				<Route exact path="/" component={Home} />
+				<Route path="/About" />
+				<Route path="/Staff" />
+				<Route path="/Programs" />
+			</div>
+		);
+	}
 }
 
 export default App;

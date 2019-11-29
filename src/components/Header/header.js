@@ -3,6 +3,8 @@ import logofull from "../../assets/logofull.png";
 import { Link } from "react-router-dom";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Jackrabbit from "../../components/Jackrabbit/jackrabbit";
+import JackrabbitMobile from "../../components/Jackrabbit/jackrabbitMobile";
 
 // <div className="contact-banner">
 // 				<a href="tel:502-271-8934">502-271-8934</a>
@@ -22,15 +24,18 @@ class Header extends React.Component {
 		super(props);
 		this.state = {
 			toggleNav: "link-tab",
-			activeLink: "home"
+			activeLink: "Home"
 		};
 	}
 
 	componentDidUpdate = (prevProps, prevState) => {
-		console.log("updated", prevProps, prevState, this.state);
+		console.log(window);
 		if (prevState.activeLink !== this.state.activeLink) {
 			this.setState({
-				toggleNav: "link-tab"
+				toggleNav: "link-tab",
+				activeLink: window.location.href.split("/")[
+					window.location.href.split("/").length - 1
+				]
 			});
 		}
 	};
@@ -42,16 +47,22 @@ class Header extends React.Component {
 		});
 	};
 
-	selectActiveLink = param => {
+	selectActiveLink = () => {
 		this.setState({
-			activeLink: param
+			activeLink: window.location.href.split("/")[
+				window.location.href.split("/").length - 1
+			]
 		});
 	};
 
 	activeObject = active => {
 		const { activeLink } = this.state;
+		const newActive = window.location.href.split("/")[
+			window.location.href.split("/").length - 1
+		];
 		let object = {
-			borderBottom: "3px solid white"
+			borderBottom: "1px solid white",
+			fontWeight: "bold"
 		};
 		let object2 = {
 			borderBottom: "0px solid white",
@@ -59,17 +70,16 @@ class Header extends React.Component {
 			color: "#9a0b0b",
 			transition: "all .5s"
 		};
-		if (activeLink === active && window.screen.width >= 768) {
+		if (newActive === active && window.screen.width >= 768) {
 			return object;
 		}
-		if (activeLink === active && window.screen.width < 768) {
+		if (newActive === active && window.screen.width < 768) {
 			return object2;
 		}
 	};
 
 	render() {
 		const { toggleNav } = this.state;
-		console.log(window.screen.width);
 		return (
 			<div className="header-container">
 				<div className="link-container">
@@ -86,42 +96,56 @@ class Header extends React.Component {
 					<div className={toggleNav}>
 						<div
 							className="navlink"
-							style={this.activeObject("home")}
-							onClick={() => this.selectActiveLink("home")}
+							style={this.activeObject("")}
+							onClick={() => this.selectActiveLink()}
 						>
-							<Link className="link" to="/" style={this.activeObject("home")}>
-								Home
+							<Link className="link" to="/" style={this.activeObject("")}>
+								HOME
 							</Link>
-						</div>
-						<div
-							className="navlink"
-							style={this.activeObject("team")}
-							onClick={() => this.selectActiveLink("team")}
-						>
-							Team
-						</div>
-						<div
-							className="navlink"
-							style={this.activeObject("link")}
-							onClick={() => this.selectActiveLink("link")}
-						>
-							Link
 						</div>
 						<div
 							className="navlink"
 							name="about"
-							style={this.activeObject("about")}
-							onClick={() => this.selectActiveLink("about")}
+							style={this.activeObject("About")}
+							onClick={() => this.selectActiveLink()}
 						>
 							<Link
 								className="link"
 								to="About"
-								style={this.activeObject("about")}
+								style={this.activeObject("About")}
 							>
-								About
+								ABOUT
 							</Link>
 						</div>
+						<div
+							className="navlink"
+							style={this.activeObject("Staff")}
+							onClick={() => this.selectActiveLink()}
+						>
+							<Link
+								className="link"
+								to="Staff"
+								style={this.activeObject("Staff")}
+							>
+								STAFF
+							</Link>
+						</div>
+						<div
+							className="navlink"
+							style={this.activeObject("Programs")}
+							onClick={() => this.selectActiveLink()}
+						>
+							<Link
+								className="link"
+								to="Programs"
+								style={this.activeObject("Programs")}
+							>
+								PROGRAMS
+							</Link>
+						</div>
+						<JackrabbitMobile />
 					</div>
+					<Jackrabbit />
 				</div>
 			</div>
 		);
