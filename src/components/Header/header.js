@@ -68,12 +68,14 @@ class Header extends React.Component {
 			borderBottom: "0px solid white",
 			background: "white",
 			color: "#9a0b0b",
+			fontWeight: "bold",
 			transition: "all .5s"
 		};
-		if (newActive === active && window.screen.width >= 768) {
+		if (newActive === active && window.innerWidth > 768) {
 			return object;
 		}
-		if (newActive === active && window.screen.width < 768) {
+		if (newActive === active && window.innerWidth < 768) {
+			console.log("2", newActive, active);
 			return object2;
 		}
 	};
