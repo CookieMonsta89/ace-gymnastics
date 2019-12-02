@@ -16,7 +16,7 @@ function App() {
 				<h2>ACE GYMNASTICS!! COMING SOON!!</h2>
 				<div>
 					<h4>Open House:</h4>
-					<p>December 14th, 1pm - 3pm</p>
+					<p>December 15th, 1pm - 3pm</p>
 				</div>
 				<div className="icon-logos">
 					<a href="mailto: office@ace-gymnastics.com">
