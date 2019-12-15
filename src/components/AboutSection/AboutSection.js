@@ -1,10 +1,16 @@
 import React from "react";
 import gymfloor from "../../assets/gymfloor.jpg";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const AboutSection = () => {
 	return (
 		<div className="home-about">
-			<div className="about-section">
+			<ScrollAnimation
+				animatePreScroll={false}
+				animateOnce={true}
+				animateIn="bounceInLeft"
+				className="about-section"
+			>
 				<h2>About Us</h2>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -21,10 +27,15 @@ const AboutSection = () => {
 					Ipsum.
 				</p>
 				<button className="button account-button">View More</button>
-			</div>
-			<div className="about-img-section">
+			</ScrollAnimation>
+			<ScrollAnimation
+				animatePreScroll={false}
+				animateOnce={true}
+				animateIn="bounceInRight"
+				className="about-img-section"
+			>
 				<img src={gymfloor} alt="gym-floor" />
-			</div>
+			</ScrollAnimation>
 		</div>
 	);
 };

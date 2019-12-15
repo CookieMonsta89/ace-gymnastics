@@ -6,6 +6,7 @@ import Home from "./containers/Home/Home";
 import ContactHeader from "./components/Header/contactheader";
 import Footer from "./components/Footer/footer";
 import Copyright from "./components/Footer/copyright";
+import ScrollAnimation from "react-animate-on-scroll";
 
 class App extends React.Component {
 	constructor(props) {
@@ -15,7 +16,7 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div className="App">
+			<ScrollAnimation animateOnce={true} animateIn="fadeIn" className="App">
 				<ContactHeader />
 				<Header />
 				<Route exact path="/" component={Home} />
@@ -24,7 +25,7 @@ class App extends React.Component {
 				<Route path="/Programs" />
 				<Footer />
 				<Copyright />
-			</div>
+			</ScrollAnimation>
 		);
 	}
 }

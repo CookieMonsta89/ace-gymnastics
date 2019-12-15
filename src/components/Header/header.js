@@ -5,19 +5,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Jackrabbit from "../../components/Jackrabbit/jackrabbit";
 import JackrabbitMobile from "../../components/Jackrabbit/jackrabbitMobile";
-
-// <div className="contact-banner">
-// 				<a href="tel:502-271-8934">502-271-8934</a>
-// 				<a href="mailto: office@ace-gymnastics.com">
-// 					office@ace-gymnastics.com
-// 				</a>
-// 			</div>
-// <div className="menu-container">
-// 						<span className="logo-container">
-// 							<img src={placeholder} alt="logo" />
-// 						</span>
-// 						<FontAwesomeIcon icon={faBars} color="white" size="1x" />
-// 					</div>
+import { Animated } from "react-animated-css";
 
 class Header extends React.Component {
 	constructor(props) {
@@ -95,7 +83,11 @@ class Header extends React.Component {
 							size="2x"
 						/>
 					</span>
-					<div className={toggleNav}>
+					<Animated
+						animationIn="fadeIn"
+						animationOut="bounceOutLeft"
+						className={toggleNav}
+					>
 						<div
 							className="navlink"
 							style={this.activeObject("")}
@@ -146,7 +138,7 @@ class Header extends React.Component {
 							</Link>
 						</div>
 						<JackrabbitMobile />
-					</div>
+					</Animated>
 					<Jackrabbit />
 				</div>
 			</div>

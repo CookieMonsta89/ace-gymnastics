@@ -10,6 +10,8 @@
     "@fortawesome/react-fontawesome": "^0.1.7",
     "bootstrap": "^4.3.1",
     "react": "^16.10.1",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-animated-css": "^1.2.1",
     "react-dom": "^16.10.1",
     "react-responsive-carousel": "^3.1.51",
     "react-router-dom": "^5.1.2",
