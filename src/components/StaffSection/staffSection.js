@@ -29,7 +29,7 @@ const StaffSection = () => {
 					<img src={sam}></img>
 					<div className="card-bottom">
 						<h4>Samantha Riffe</h4>
-						<p>Coach</p>
+						<p>Gym Manager/Coach</p>
 					</div>
 				</ScrollAnimation>
 			</div>

@@ -7,13 +7,13 @@ const JackrabbitMobile = () => {
 				href="https://app.jackrabbitclass.com/regv2.asp?id=539177"
 				target="_blank"
 			>
-				<button className="button">REGISTER</button>
+				<button className="button">Register</button>
 			</a>
 			<a
 				href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgID=539177"
 				target="_blank"
 			>
-				<button className="button account-button">ACCOUNT</button>
+				<button className="button account-button">Parent Portal</button>
 			</a>
 		</div>
 	);

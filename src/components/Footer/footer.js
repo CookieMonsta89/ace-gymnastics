@@ -13,8 +13,8 @@ const Footer = () => {
 				<p>
 					<a href="tel:502-252-8512">502-252-8512</a>
 				</p>
-				<p>123 bloomfield rd</p>
-				<p>Bloomfield, KY 40333</p>
+				<p>160 Iroquois Trail</p>
+				<p>Bloomfield, KY 40008</p>
 			</div>
 			<div className="footer-section about-us">
 				<h4>About Us:</h4>

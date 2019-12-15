@@ -74,7 +74,9 @@ class Header extends React.Component {
 			<div className="header-container">
 				<div className="link-container">
 					<span className="logo-container">
-						<img src={logofull} alt="logo" />
+						<Link>
+							<img src={logofull} alt="logo" />
+						</Link>
 					</span>
 					<span className="hamburger" onClick={this.handleClickTab}>
 						<FontAwesomeIcon

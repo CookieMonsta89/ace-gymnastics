@@ -8,7 +8,7 @@ const MidPageBreak = () => {
 				href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgID=539177"
 				target="_blank"
 			>
-				<button className="button account-button">Account</button>
+				<button className="button account-button">Parent Portal</button>
 			</a>
 		</div>
 	);
