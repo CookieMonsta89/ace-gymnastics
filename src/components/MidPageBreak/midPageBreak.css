@@ -1,0 +1,58 @@
+.midPage-container {
+	background: var(--red-color);
+	color: white;
+	height: 200px;
+	font-size: 1.5vw;
+	display: flex;
+	padding: 0px 10%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.midPage-container button {
+	background: white;
+	color: var(--red-color);
+}
+
+.midPage-container button:hover {
+	background: var(--red-color);
+	color: white;
+	border: 1px solid white;
+}
+
+@media only screen and (max-width: 1500px) {
+	.midPage-container {
+		font-size: 2vw;
+	}
+	.midPage-container button {
+		font-size: 1.2vw;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.midPage-container {
+		font-size: 2.5vw;
+	}
+	.midPage-container button {
+		font-size: 1.5vw;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.midPage-container {
+		font-size: 3vw;
+	}
+	.midPage-container button {
+		font-size: 2.5vw;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.midPage-container {
+		font-size: 4vw;
+	}
+	.midPage-container button {
+		font-size: 4vw;
+	}
+}

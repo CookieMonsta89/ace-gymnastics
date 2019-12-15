@@ -18,7 +18,7 @@
 }
 
 .program-image {
-	width: 32%;
+	width: 30%;
 }
 
 .program-image img {
@@ -60,6 +60,12 @@
 
 	.program-section-button .button {
 		font-size: 2.5vw;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.program-section-button .button {
+		font-size: 4vw;
 	}
 }
 

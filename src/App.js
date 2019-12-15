@@ -4,6 +4,8 @@ import Header from "./components/Header/header";
 import { Route } from "react-router-dom";
 import Home from "./containers/Home/Home";
 import ContactHeader from "./components/Header/contactheader";
+import Footer from "./components/Footer/footer";
+import Copyright from "./components/Footer/copyright";
 
 class App extends React.Component {
 	constructor(props) {
@@ -20,6 +22,8 @@ class App extends React.Component {
 				<Route path="/About" />
 				<Route path="/Staff" />
 				<Route path="/Programs" />
+				<Footer />
+				<Copyright />
 			</div>
 		);
 	}

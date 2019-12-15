@@ -7,6 +7,9 @@ import "./components/Jackrabbit/jackrabbit.css";
 import "./containers/About/about.css";
 import "./containers/Programs/program.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./components/MidPageBreak/midPageBreak.css";
+import "./components/StaffSection/staffSection.css";
+import "./components/Footer/footer.css";
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(

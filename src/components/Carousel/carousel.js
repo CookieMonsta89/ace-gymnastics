@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import teamphoto from "../../assets/teamphoto.jpg";
 import photo from "../../assets/photo.jpg";
 import photo2 from "../../assets/photo2.jpg";
+import "../Carousel/carousel.css";
 import {
 	Carousel,
 	CarouselItem,

@@ -1,2 +1,7 @@
-.carousel-container {
+img {
+	max-height: 825px;
+}
+
+.carousel-indicators .active {
+	background-color: var(--red-color);
 }
