@@ -20,7 +20,7 @@ const AboutSection = () => {
 					publishing software like Aldus PageMaker including versions of Lorem
 					Ipsum.
 				</p>
-				<button className="button account-button">Learn More</button>
+				<button className="button account-button">View More</button>
 			</div>
 			<div className="about-img-section">
 				<img src={gymfloor} alt="gym-floor" />
