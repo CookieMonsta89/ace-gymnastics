@@ -10,7 +10,9 @@ const Footer = () => {
 		<div className="footer-container">
 			<div className="footer-section contact">
 				<h4>Contact:</h4>
-				<p>502-252-8512</p>
+				<p>
+					<a href="tel:502-252-8512">502-252-8512</a>
+				</p>
 				<p>123 bloomfield rd</p>
 				<p>Bloomfield, KY 40333</p>
 			</div>
