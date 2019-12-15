@@ -11,7 +11,7 @@ const ProgramSection = () => {
 				<ScrollAnimation
 					animatePreScroll={false}
 					animateOnce={true}
-					animateIn="bounceInLeft"
+					animateIn="fadeIn"
 					className="program-image"
 				>
 					<img src={program2} />
@@ -20,7 +20,7 @@ const ProgramSection = () => {
 				<ScrollAnimation
 					animatePreScroll={false}
 					animateOnce={true}
-					animateIn="bounceInUp"
+					animateIn="fadeIn"
 					className="program-image"
 				>
 					<img src={program1} />
@@ -29,7 +29,7 @@ const ProgramSection = () => {
 				<ScrollAnimation
 					animatePreScroll={false}
 					animateOnce={true}
-					animateIn="bounceInRight"
+					animateIn="fadeIn"
 					className="program-image"
 				>
 					<img src={program3} />

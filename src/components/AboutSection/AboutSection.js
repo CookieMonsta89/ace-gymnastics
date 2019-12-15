@@ -8,7 +8,7 @@ const AboutSection = () => {
 			<ScrollAnimation
 				animatePreScroll={false}
 				animateOnce={true}
-				animateIn="bounceInLeft"
+				animateIn="fadeIn"
 				className="about-section"
 			>
 				<h2>About Us</h2>
@@ -31,7 +31,7 @@ const AboutSection = () => {
 			<ScrollAnimation
 				animatePreScroll={false}
 				animateOnce={true}
-				animateIn="bounceInRight"
+				animateIn="fadeIn"
 				className="about-img-section"
 			>
 				<img src={gymfloor} alt="gym-floor" />

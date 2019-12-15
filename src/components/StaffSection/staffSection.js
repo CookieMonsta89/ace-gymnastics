@@ -10,7 +10,7 @@ const StaffSection = () => {
 			<div className="staff-card-container">
 				<ScrollAnimation
 					animateOnce={true}
-					animateIn="bounceInLeft"
+					animateIn="fadeIn"
 					className="staff-card"
 				>
 					<div className="card-top"></div>
@@ -22,7 +22,7 @@ const StaffSection = () => {
 				</ScrollAnimation>
 				<ScrollAnimation
 					animateOnce={true}
-					animateIn="bounceInRight"
+					animateIn="fadeIn"
 					className="staff-card"
 				>
 					<div className="card-top"></div>
