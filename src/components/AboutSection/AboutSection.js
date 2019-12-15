@@ -6,7 +6,7 @@ const AboutSection = () => {
 	return (
 		<div className="home-about">
 			<ScrollAnimation
-				animatePreScroll={false}
+				animatePreScroll={window.innerWidth < 500}
 				animateOnce={true}
 				animateIn="fadeIn"
 				className="about-section"
@@ -29,7 +29,7 @@ const AboutSection = () => {
 				<button className="button account-button">View More</button>
 			</ScrollAnimation>
 			<ScrollAnimation
-				animatePreScroll={false}
+				animatePreScroll={window.innerWidth < 500}
 				animateOnce={true}
 				animateIn="fadeIn"
 				className="about-img-section"
