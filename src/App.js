@@ -23,9 +23,7 @@ class App extends React.Component {
 				<ContactHeader />
 				<Header />
 				<Route exact path="/" component={Home} />
-				// <Route path="/About" component={AboutContainer} />
-				// <Route path="/Staff" component={StaffContainer} />
-				// <Route path="/Programs" component={ProgramContainer} />
+
 				<Footer />
 				<Copyright />
 			</ScrollAnimation>
