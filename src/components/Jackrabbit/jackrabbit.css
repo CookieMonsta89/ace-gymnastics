@@ -1,0 +1,83 @@
+.jackrabbit {
+	display: flex;
+	width: 20%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.button {
+	width: 125px;
+	height: 50px;
+	border-radius: 5px;
+	background: white;
+	color: var(--red-color);
+	font-weight: bold;
+	font-size: 0.75vw;
+	box-shadow: 0px 3px #00000045;
+	border: 1px solid var(--red-color);
+	transition: all 0.5s;
+	margin: 0 0.25rem;
+}
+
+.account-button {
+	width: 125px;
+	height: 50px;
+	border-radius: 5px;
+	background: var(--red-color);
+	color: white;
+	font-weight: bold;
+	font-size: 0.75vw;
+	box-shadow: 0px 3px #00000045;
+	border: 1px solid white;
+	transition: all 0.5s;
+	margin: 0;
+}
+
+.button:hover {
+	background: var(--red-color);
+	color: white;
+	border: 1px solid white;
+}
+
+.account-button:hover {
+	background: white;
+	color: var(--red-color);
+	border: 1px solid var(--red-color);
+}
+
+.jackrabbit-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1300px) {
+	.jackrabbit .button {
+		font-size: 1vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.jackrabbit {
+		display: none;
+	}
+
+	.jackrabbit-mobile {
+		display: flex;
+		width: 100%;
+		justify-content: space-evenly;
+		height: 75vh;
+		align-items: center;
+	}
+
+	.jackrabbit-mobile .button {
+		font-size: 4vw;
+		box-shadow: 0px 3px #00000045;
+		transition: all 0.5s;
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	/* .button {
+		font-size: 2vw;
+	} */
+}

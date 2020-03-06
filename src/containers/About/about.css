@@ -1,0 +1,81 @@
+/* css for home about section */
+
+.home-about {
+	display: flex;
+	width: 100%;
+	padding: 100px 10%;
+	text-align: left;
+	line-height: 1.5;
+}
+
+.about-section {
+	width: 50%;
+	padding: 2% 2% 2% 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.about-section h2 {
+	color: var(--red-color);
+}
+
+.about-img-section {
+	width: 50%;
+	padding: 2% 0 2% 2%;
+	font-size: 1vw;
+}
+
+.about-img-section img {
+	height: auto;
+}
+
+.about-section button {
+	height: 50px;
+}
+
+@media only screen and (max-width: 1500px) {
+	.about-section button {
+		height: 50px;
+		font-size: 1.2vw;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.about-section button {
+		height: 50px;
+		font-size: 1.5vw;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.home-about {
+		flex-direction: column;
+		padding: 40px 5%;
+	}
+
+	.about-section {
+		width: 100%;
+		padding: 0;
+	}
+
+	.about-img-section {
+		width: 100%;
+		padding: 0;
+		margin-top: 20px;
+	}
+
+	.about-section button {
+		height: 50px;
+		font-size: 2.5vw;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.about-section button {
+		height: 50px;
+		font-size: 4vw;
+	}
+}
+
+/* css above is for home about section */

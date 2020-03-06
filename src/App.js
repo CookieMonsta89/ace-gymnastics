@@ -1,43 +1,34 @@
 import React from "react";
 import "./App.css";
-import tumbling from "./assets/tumbling.gif";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhoneSquare } from "@fortawesome/free-solid-svg-icons";
-import {
-	faFacebookSquare,
-	faInstagram
-} from "@fortawesome/free-brands-svg-icons";
+import Header from "./components/Header/header";
+import { Route } from "react-router-dom";
+import Home from "./containers/Home/Home";
+import ContactHeader from "./components/Header/contactheader";
+import Footer from "./components/Footer/footer";
+import Copyright from "./components/Footer/copyright";
+import ScrollAnimation from "react-animate-on-scroll";
+// import ProgramContainer from "./containers/Programs/Program";
+// import AboutContainer from "./containers/About/About";
+// import StaffContainer from "./containers/Staff/Staff";
 
-function App() {
-	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={tumbling} alt="tumbling-logo" />
-				<h2>ACE GYMNASTICS!! COMING SOON!!</h2>
-				<div>
-					<h4>Open House:</h4>
-					<p>December 15th, 1pm - 3pm</p>
-				</div>
-				<div className="icon-logos">
-					<a href="mailto: office@ace-gymnastics.com">
-						<FontAwesomeIcon icon={faEnvelope} color="white" size="2x" />
-					</a>
-					<a
-						href="https://www.facebook.com/ACE-Gymnastics-101806134601903/"
-						target="_blank"
-					>
-						<FontAwesomeIcon icon={faFacebookSquare} color="white" size="2x" />
-					</a>
-					<a href="https://www.instagram.com/ace.gymnastics/" target="_blank">
-						<FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
-					</a>
-					<a href="tel:502-252-8512">
-						<FontAwesomeIcon icon={faPhoneSquare} color="white" size="2x" />
-					</a>
-				</div>
-			</header>
-		</div>
-	);
+class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
+
+	render() {
+		return (
+			<ScrollAnimation animateOnce={true} animateIn="fadeIn" className="App">
+				<ContactHeader />
+				<Header />
+				<Route exact path="/" component={Home} />
+
+				<Footer />
+				<Copyright />
+			</ScrollAnimation>
+		);
+	}
 }
 
 export default App;
