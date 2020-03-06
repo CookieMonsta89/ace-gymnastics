@@ -1,38 +1,32 @@
 import React from "react";
-import gymfloor from "../../assets/gymfloor.jpg";
+import gymfloor from "../../assets/gym-floor.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const AboutSection = () => {
 	return (
 		<div className="home-about">
 			<ScrollAnimation
-				animatePreScroll={window.innerWidth < 500}
+				animatePreScroll={window.innerWidth <= 500}
 				animateOnce={true}
 				animateIn="fadeIn"
 				className="about-section"
+				initiallyVisible={true}
 			>
 				<h2>About Us</h2>
 				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry. Lorem Ipsum has been the industry's standard dummy text ever
-					since the 1500s, when an unknown printer took a galley of type and
-					scrambled it to make a type specimen book.
-				</p>
-				<p>
-					It has survived not only five centuries, but also the leap into
-					electronic typesetting, remaining essentially unchanged. It was
-					popularised in the 1960s with the release of Letraset sheets
-					containing Lorem Ipsum passages, and more recently with desktop
-					publishing software like Aldus PageMaker including versions of Lorem
-					Ipsum.
+					Family owned and operated, ACE Gymnastics is a multifunctional
+					facility located in Bloomfield, Ky. We welcome students of all
+					abilities from 18 months to 18 years offering gymnastics, tumbling,
+					birthday parties, special events, and more!
 				</p>
 				<button className="button account-button">View More</button>
 			</ScrollAnimation>
 			<ScrollAnimation
-				animatePreScroll={window.innerWidth < 500}
+				animatePreScroll={true}
 				animateOnce={true}
 				animateIn="fadeIn"
 				className="about-img-section"
+				initiallyVisible={true}
 			>
 				<img src={gymfloor} alt="gym-floor" />
 			</ScrollAnimation>

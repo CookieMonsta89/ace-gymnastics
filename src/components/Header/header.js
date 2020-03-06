@@ -17,7 +17,6 @@ class Header extends React.Component {
 	}
 
 	componentDidUpdate = (prevProps, prevState) => {
-		console.log(window);
 		if (prevState.activeLink !== this.state.activeLink) {
 			this.setState({
 				toggleNav: "link-tab",
