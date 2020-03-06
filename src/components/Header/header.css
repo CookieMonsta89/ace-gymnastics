@@ -75,11 +75,18 @@ img {
 	font-size: 0.75vw;
 }
 
-.navlink:hover {
+.navlink:hover:first-child {
 	border-bottom: 1px solid white;
 	margin-bottom: 5px;
 	transition: all 0.5s;
 	cursor: pointer;
+}
+
+.navlink:hover {
+	border-bottom: 1px solid white;
+	margin-bottom: 5px;
+	transition: all 0.5s;
+	cursor: not-allowed;
 }
 
 a.link {
@@ -89,20 +96,30 @@ a.link {
 	width: 100%;
 }
 
+a.link:nth-child(0):hover {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+
 a.link:hover {
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
+	cursor: not-allowed;
 }
 
 a.link:focus {
 	color: white;
 	text-decoration: none;
+	cursor: not-allowed;
 }
 
 a.link:active {
 	color: white;
 	text-decoration: none;
+	cursor: not-allowed;
 }
 
 /* Smaller Desktop screen sizing */

@@ -106,7 +106,7 @@ class Header extends React.Component {
 						>
 							<Link
 								className="link"
-								to="About"
+								// to="About"
 								style={this.activeObject("About")}
 							>
 								ABOUT
@@ -119,7 +119,7 @@ class Header extends React.Component {
 						>
 							<Link
 								className="link"
-								to="Staff"
+								// to="Staff"
 								style={this.activeObject("Staff")}
 							>
 								STAFF
@@ -132,7 +132,7 @@ class Header extends React.Component {
 						>
 							<Link
 								className="link"
-								to="Programs"
+								// to="Programs"
 								style={this.activeObject("Programs")}
 							>
 								PROGRAMS

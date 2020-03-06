@@ -16,17 +16,17 @@ const items = [
 		src: `${teamphoto}`,
 		altText: "Slide 1",
 		caption: ""
-	},
-	{
-		src: `${photo}`,
-		altText: "Slide 2",
-		caption: ""
-	},
-	{
-		src: `${photo2}`,
-		altText: "Registration Now Open",
-		caption: ""
 	}
+	// {
+	// 	src: `${photo}`,
+	// 	altText: "Slide 2",
+	// 	caption: ""
+	// }
+	// {
+	// 	src: `${photo2}`,
+	// 	altText: "Registration Now Open",
+	// 	caption: ""
+	// }
 ];
 
 const CarouselJumbo = props => {
