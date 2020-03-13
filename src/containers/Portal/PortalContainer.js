@@ -45,11 +45,14 @@ class PortalContainer extends React.Component {
 							: "announcement-info-closed"
 					}
 				>
-					<h6>3/12/2020 Announcement</h6>
+					<h6>3/13/2020 Announcement</h6>
 					<p>
-						Classes today are CANCELLED due to severe weather. Please call or
-						message us with any concerns. Make ups will be offered and can be
-						scheduled by calling our office.
+						Classes will be cancelled today, March 13th, 2020. This will be done
+						so that we can come together as a staff to evaluate how we will deal
+						with the current health situation in our community and world. We
+						thank you for your patience and understanding as we navigate these
+						unknown times. We will be sure to communicate a plan very soon for
+						the coming weeks!
 					</p>
 				</div>
 			</div>,
