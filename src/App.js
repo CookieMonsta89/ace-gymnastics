@@ -20,7 +20,6 @@ class App extends React.Component {
 	}
 
 	componentDidMount = () => {
-		alert(process.env.REACT_APP_GA_TRACKING);
 		this.initializeReactGA();
 	};
 
