@@ -97,13 +97,13 @@ h6 {
 @media only screen and (max-width: 414px) {
 	.portal-container-open {
 		right: 10vw;
-		left: 8vw;
+		left: 10vw;
 		max-width: 100vw;
 	}
 
 	.portal-container-closed {
 		right: 10vw;
-		left: 8vw;
+		left: 10vw;
 		bottom: 3vh;
 	}
 }
