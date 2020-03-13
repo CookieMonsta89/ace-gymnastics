@@ -11,12 +11,18 @@ import ScrollAnimation from "react-animate-on-scroll";
 // import AboutContainer from "./containers/About/About";
 // import StaffContainer from "./containers/Staff/Staff";
 import PortalContainer from "./containers/Portal/PortalContainer";
+import ReactGA from "react-ga";
 
 class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {};
 	}
+
+	initializeReactGA = () => {
+		ReactGA.initialize("UA-160651356-1");
+		ReactGA.pageview("/");
+	};
 
 	render() {
 		return (
