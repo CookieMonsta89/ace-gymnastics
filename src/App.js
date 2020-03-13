@@ -20,6 +20,7 @@ class App extends React.Component {
 	}
 
 	componentDidMount = () => {
+		// initializes Google Analytics
 		this.initializeReactGA();
 	};
 
