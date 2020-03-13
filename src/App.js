@@ -20,11 +20,12 @@ class App extends React.Component {
 	}
 
 	componentDidMount = () => {
-		initializeReactGA();
+		alert(process.env.REACT_APP_GA_TRACKING);
+		this.initializeReactGA();
 	};
 
 	initializeReactGA = () => {
-		ReactGA.initialize("UA-160651356-1");
+		ReactGA.initialize(process.env.REACT_APP_GA_TRACKING);
 		ReactGA.pageview("/");
 	};
 
