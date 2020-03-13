@@ -1,6 +1,6 @@
 import React from "react";
-import callye from "../../assets/callye.jpg";
-import sam from "../../assets/sam.jpg";
+import callye from "../../assets/callyecomp.jpg";
+import sam from "../../assets/samcomp.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const StaffSection = () => {

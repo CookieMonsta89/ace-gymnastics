@@ -1,5 +1,5 @@
 import React from "react";
-import gymfloor from "../../assets/gym-floor.jpg";
+import gymfloor from "../../assets/gym-floorcomp.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const AboutSection = () => {

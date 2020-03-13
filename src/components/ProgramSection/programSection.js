@@ -1,8 +1,8 @@
 import React from "react";
-import program1 from "../../assets/program1.jpg";
-import program2 from "../../assets/program2.jpg";
-import program3 from "../../assets/program3.jpg";
-import program4 from "../../assets/program4.jpg";
+import program1 from "../../assets/program1comp.jpg";
+import program2 from "../../assets/program2comp.jpg";
+import program3 from "../../assets/program3comp.jpg";
+import program4 from "../../assets/program4comp.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const ProgramSection = () => {
