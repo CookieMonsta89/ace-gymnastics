@@ -19,6 +19,10 @@ class App extends React.Component {
 		this.state = {};
 	}
 
+	componentDidMount = () => {
+		initializeReactGA();
+	};
+
 	initializeReactGA = () => {
 		ReactGA.initialize("UA-160651356-1");
 		ReactGA.pageview("/");
