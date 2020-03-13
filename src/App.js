@@ -34,7 +34,7 @@ class App extends React.Component {
 			<ScrollAnimation animateOnce={true} animateIn="fadeIn" className="App">
 				<ContactHeader />
 				<Header />
-
+				<PortalContainer />
 				<Route exact path="/" component={Home} />
 				<Footer />
 				<Copyright />
