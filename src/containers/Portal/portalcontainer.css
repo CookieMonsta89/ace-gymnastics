@@ -1,0 +1,109 @@
+.portal-container-open {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	max-width: 50vw;
+	position: fixed;
+	bottom: 2vh;
+	right: 5vw;
+	background: var(--red-color);
+	color: white;
+	padding: 2em;
+	border-radius: 10px;
+	border: 1px solid white;
+	overflow: hidden;
+	transition: max-width 0.5s;
+}
+
+.portal-container-closed {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	max-width: 30vw;
+	position: fixed;
+	bottom: 2vh;
+	right: 5vw;
+	background: var(--red-color);
+	color: white;
+	padding: 0.8em;
+	border-radius: 10px;
+	border: 1px solid white;
+	transition: max-width 0.5s;
+}
+
+.announcement-icon {
+	display: flex;
+	justify-content: space-between;
+}
+
+h5 {
+	padding: 0 0.4em;
+}
+
+h6 {
+	padding: 1em 0;
+}
+
+.announcement-info-open {
+}
+
+.announcement-info-closed {
+	display: none;
+}
+
+/* IPAD mobile CSS */
+
+@media only screen and (max-width: 768px) {
+	.portal-container-open {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		max-width: 75vw;
+		max-height: 60vh;
+		position: fixed;
+		bottom: 2vh;
+		right: 20vw;
+		left: 20vw;
+		background: var(--red-color);
+		color: white;
+		padding: 2em;
+		border-radius: 10px;
+		border: 1px solid white;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+
+	.portal-container-closed {
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		max-width: 100vw;
+		max-height: 10vh;
+		position: fixed;
+		bottom: 2vh;
+		left: 30vw;
+		right: 30vw;
+		background: var(--red-color);
+		color: white;
+		padding: 0.8em;
+		border-radius: 10px;
+		border: 1px solid white;
+		transition: max-height 0.5s;
+	}
+}
+
+/* Iphone 6 CSS */
+
+@media only screen and (max-width: 414px) {
+	.portal-container-open {
+		right: 10vw;
+		left: 8vw;
+		max-width: 100vw;
+	}
+
+	.portal-container-closed {
+		right: 10vw;
+		left: 8vw;
+		bottom: 3vh;
+	}
+}
