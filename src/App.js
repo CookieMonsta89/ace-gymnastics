@@ -7,9 +7,10 @@ import ContactHeader from "./components/Header/contactheader";
 import Footer from "./components/Footer/footer";
 import Copyright from "./components/Footer/copyright";
 import ScrollAnimation from "react-animate-on-scroll";
-import ProgramContainer from "./containers/Programs/program";
-import AboutContainer from "./containers/About/About";
-import StaffContainer from "./containers/Staff/Staff";
+// import ProgramContainer from "./containers/Programs/program";
+// import AboutContainer from "./containers/About/About";
+// import StaffContainer from "./containers/Staff/Staff";
+import PortalContainer from "./containers/Portal/PortalContainer";
 
 class App extends React.Component {
 	constructor(props) {
@@ -22,10 +23,8 @@ class App extends React.Component {
 			<ScrollAnimation animateOnce={true} animateIn="fadeIn" className="App">
 				<ContactHeader />
 				<Header />
+				<PortalContainer />
 				<Route exact path="/" component={Home} />
-				<Route exact path="/" component={ProgramContainer} />
-				<Route exact path="/" component={AboutContainer} />
-				<Route exact path="/" component={StaffContainer} />
 				<Footer />
 				<Copyright />
 			</ScrollAnimation>
