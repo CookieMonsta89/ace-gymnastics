@@ -29,9 +29,11 @@ class Header extends React.Component {
 
 	handleClickTab = () => {
 		const { toggleNav } = this.state;
+		const { toggleMenu } = this.props;
 		this.setState({
 			toggleNav: toggleNav === "link-tab" ? "link-tab-open" : "link-tab"
 		});
+		toggleMenu();
 	};
 
 	selectActiveLink = () => {
@@ -62,7 +64,6 @@ class Header extends React.Component {
 			return object;
 		}
 		if (newActive === active && window.innerWidth < 768) {
-			console.log("2", newActive, active);
 			return object2;
 		}
 	};

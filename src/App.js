@@ -16,7 +16,9 @@ import ReactGA from "react-ga";
 class App extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			menuOpen: false
+		};
 	}
 
 	componentDidMount = () => {
@@ -29,12 +31,20 @@ class App extends React.Component {
 		ReactGA.pageview("/");
 	};
 
+	toggleMenu = () => {
+		const { menuOpen } = this.state;
+		this.setState({
+			menuOpen: !menuOpen
+		});
+	};
+
 	render() {
+		const { menuOpen } = this.state;
 		return (
 			<ScrollAnimation animateOnce={true} animateIn="fadeIn" className="App">
 				<ContactHeader />
-				<Header />
-				<PortalContainer />
+				<Header toggleMenu={this.toggleMenu} />
+				{menuOpen ? null : <PortalContainer />}
 				<Route exact path="/" component={Home} />
 				<Footer />
 				<Copyright />
