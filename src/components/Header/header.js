@@ -45,7 +45,6 @@ class Header extends React.Component {
 	};
 
 	activeObject = active => {
-		const { activeLink } = this.state;
 		const newActive = window.location.href.split("/")[
 			window.location.href.split("/").length - 1
 		];
