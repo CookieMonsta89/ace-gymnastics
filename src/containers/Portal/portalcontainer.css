@@ -34,6 +34,7 @@
 .announcement-icon {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 5px;
 }
 
 h5 {

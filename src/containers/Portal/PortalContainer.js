@@ -39,10 +39,9 @@ class PortalContainer extends React.Component {
 					announcementOpen ? "portal-container-open" : "portal-container-closed"
 				}
 			>
-				<div className="announcement-icon">
+				<div className="announcement-icon" onClick={this.openAnnouncement}>
 					<FontAwesomeIcon
 						style={{ cursor: "pointer" }}
-						onClick={this.openAnnouncement}
 						icon={announcementOpen ? faTimes : faExclamationCircle}
 						size="lg"
 					/>
@@ -55,42 +54,48 @@ class PortalContainer extends React.Component {
 							: "announcement-info-closed"
 					}
 				>
-					<h6>3/14/2020 Announcement</h6>
+					<h6>3/15/2020 Announcement</h6>
+					<h6>Dear ACE Gymnastics families,</h6>
 					<p>
-						Due to increasing concerns with the COVID-19 situation, ACE
-						Gymnastics will be making the following adjustments.
-						<ul>
-							<li>
-								Classes- Due to our low student to teacher ratios and our open
-								space environment, all classes will continue as normal.
-							</li>
-							<li>
-								Spectators- If your athlete is over 6 we ask that you come in
-								for drop off and pick up only. For younger athletes we ask that
-								you limit spectators to one adult per family.
-							</li>
-							<li>
-								Wellness- Please do not send your child to class if they or
-								anyone in the household are not well. Please ensure they are
-								fever free for 48 hours. If you are not sending your child to
-								class, please let us know. Students will be sent home if they
-								are showing any signs of symptoms.
-							</li>
-							<li>
-								Make up policy- We will continue to offer make ups if your child
-								is unable to come to class and will be extending our make up
-								policy from 30 days to 60 days.
-							</li>
-							<li>
-								Cleanliness- We will continue to disinfect and sanitze our mats,
-								bathrooms, doors, etc every day. We also have hand sanitizer
-								stations throughout our facility.
-							</li>
-						</ul>
-						We will be monitoring the situation daily. Please reference our
-						website for the most up to date information. We will also post on
-						facebook and send any information via email.
+						The health and well being of our students, families and staff is
+						always our first priority. Our leadership team has worked diligently
+						the past 24hours to make decisions that reflect our commitment to
+						our students and staff. There has been an enormous amount of
+						information to process and we are doing our very best to make
+						decisions that are in the benefit of all while supporting the needs
+						of our families and staff.
 					</p>
+					<p>
+						We feel it is in the best interest of our staff and students to put
+						all classes on hold for next week March 16-20. As the coming week
+						progresses, we will evaluate what to do the following week. In
+						response to this we are removing expiration dates on missed classes
+						for make-ups. Once we reopen, please call our office or email to
+						schedule your make up. Our hope is that if the community works
+						together, we can get through these times safely and healthy.
+					</p>
+					<p>
+						We feel it is in the best interest of our staff and students to put
+						all classes on hold for next week March 16-20. As the coming week
+						progresses, we will evaluate what to do the following week. In
+						response to this we are removing expiration dates on missed classes
+						for make-ups. Once we reopen, please call our office or email to
+						schedule your make up. Our hope is that if the community works
+						together, we can get through these times safely and healthy. We know
+						you love your instructor and have selected the class that works best
+						for your schedule. So, we want to encourage you to remain enrolled
+						in your class and use our make-up option for those missed classes.
+						This helps support our small business staff and keeps your child in
+						the class they have grown to love and progress in!
+					</p>
+					<p>
+						We will continue to communicate with you as we have updates. We
+						can’t wait to have this behind us so we can all resume our normal
+						activities! Thank you for your support and for helping us keep our
+						community safe and healthy. We appreciate you supporting ACE
+						Gymnastics in a time that is difficult for all small businesses!
+					</p>
+					<h6>ACE Gymnastics Staff</h6>
 				</div>
 			</div>,
 			document.getElementById("portal-root")
