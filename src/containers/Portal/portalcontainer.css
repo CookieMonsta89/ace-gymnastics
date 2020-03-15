@@ -34,7 +34,10 @@
 .announcement-icon {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 5px;
+}
+
+.announcement-date {
+	margin-top: 20px;
 }
 
 h5 {

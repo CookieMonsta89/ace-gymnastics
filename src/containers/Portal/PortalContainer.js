@@ -54,7 +54,7 @@ class PortalContainer extends React.Component {
 							: "announcement-info-closed"
 					}
 				>
-					<h6>3/15/2020 Announcement</h6>
+					<h6 className="announcement-date">3/15/2020 Announcement</h6>
 					<h6>Dear ACE Gymnastics families,</h6>
 					<p>
 						The health and well being of our students, families and staff is
