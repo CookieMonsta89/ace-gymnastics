@@ -37,14 +37,18 @@
 }
 
 .announcement-date {
-	margin-top: 20px;
+	margin-top: 2em;
 }
 
-h5 {
+.announcement-icon h5 {
 	padding: 0 0.4em;
 }
 
-h6 {
+.announcement-info-open h6 {
+	padding: 1em 0;
+}
+
+.announcement-info-open h6 {
 	padding: 1em 0;
 }
 
