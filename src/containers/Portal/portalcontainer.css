@@ -3,6 +3,7 @@
 	flex-direction: column;
 	width: auto;
 	max-width: 50vw;
+	max-height: 90vh;
 	position: fixed;
 	bottom: 2vh;
 	right: 5vw;

@@ -44,7 +44,6 @@ class App extends React.Component {
 			<ScrollAnimation animateOnce={true} animateIn="fadeIn" className="App">
 				<ContactHeader />
 				<Header toggleMenu={this.toggleMenu} />
-				{menuOpen ? null : <PortalContainer />}
 				<Route exact path="/" component={Home} />
 				<Footer />
 				<Copyright />
@@ -52,5 +51,8 @@ class App extends React.Component {
 		);
 	}
 }
+
+// add this to line 47 to use portal announcement
+// {menuOpen ? null : <PortalContainer />}
 
 export default App;
