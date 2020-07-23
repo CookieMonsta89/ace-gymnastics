@@ -14,7 +14,7 @@ const StaffSection = () => {
 					className="staff-card"
 				>
 					<div className="card-top"></div>
-					<img src={callye}></img>
+					<img src={callye} alt="callye"></img>
 					<div className="card-bottom">
 						<h4>Callye Elder</h4>
 						<p>Owner/Coach</p>
@@ -26,7 +26,7 @@ const StaffSection = () => {
 					className="staff-card"
 				>
 					<div className="card-top"></div>
-					<img src={sam}></img>
+					<img src={sam} alt="sam"></img>
 					<div className="card-bottom">
 						<h4>Samantha Riffe</h4>
 						<p>Gym Manager/Coach</p>

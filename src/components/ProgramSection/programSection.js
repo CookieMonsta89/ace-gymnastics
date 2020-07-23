@@ -15,7 +15,7 @@ const ProgramSection = () => {
 					animateIn="fadeIn"
 					className="program-image"
 				>
-					<img src={program2} />
+					<img src={program2} alt="personflipping" />
 					<h3>Recreational Gymnastics</h3>
 				</ScrollAnimation>
 				<ScrollAnimation
@@ -24,7 +24,7 @@ const ProgramSection = () => {
 					animateIn="fadeIn"
 					className="program-image"
 				>
-					<img src={program1} />
+					<img src={program1} alt="personflipping" />
 					<h3>Tumbling</h3>
 				</ScrollAnimation>
 				<ScrollAnimation
@@ -33,7 +33,7 @@ const ProgramSection = () => {
 					animateIn="fadeIn"
 					className="program-image"
 				>
-					<img src={program3} />
+					<img src={program3} alt="personflipping" />
 					<h3>Yoga Flow</h3>
 				</ScrollAnimation>
 				<ScrollAnimation
@@ -42,7 +42,7 @@ const ProgramSection = () => {
 					animateIn="fadeIn"
 					className="program-image"
 				>
-					<img src={program4} />
+					<img src={program4} alt="personflipping" />
 					<h3>Competitive Gymnastics</h3>
 				</ScrollAnimation>
 			</div>

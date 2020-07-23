@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faFacebookSquare,
-	faInstagram
+	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -27,10 +27,15 @@ const Footer = () => {
 					<a
 						href="https://www.facebook.com/ACE-Gymnastics-101806134601903/"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<FontAwesomeIcon icon={faFacebookSquare} color="white" size="2x" />
 					</a>
-					<a href="https://www.instagram.com/ace.gymnastics/" target="_blank">
+					<a
+						href="https://www.instagram.com/ace.gymnastics/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
 					</a>
 				</div>

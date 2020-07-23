@@ -10,14 +10,13 @@ import ScrollAnimation from "react-animate-on-scroll";
 // import ProgramContainer from "./containers/Programs/program";
 // import AboutContainer from "./containers/About/About";
 // import StaffContainer from "./containers/Staff/Staff";
-import PortalContainer from "./containers/Portal/PortalContainer";
 import ReactGA from "react-ga";
 
 class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			menuOpen: false
+			menuOpen: false,
 		};
 	}
 
@@ -34,12 +33,11 @@ class App extends React.Component {
 	toggleMenu = () => {
 		const { menuOpen } = this.state;
 		this.setState({
-			menuOpen: !menuOpen
+			menuOpen: !menuOpen,
 		});
 	};
 
 	render() {
-		const { menuOpen } = this.state;
 		return (
 			<ScrollAnimation animateOnce={true} animateIn="fadeIn" className="App">
 				<ContactHeader />
