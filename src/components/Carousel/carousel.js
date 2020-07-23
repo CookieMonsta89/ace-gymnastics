@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 import teamphoto from "../../assets/teamphotocomp.jpg";
-import photo from "../../assets/photo.jpg";
-import photo2 from "../../assets/photo2.jpg";
 import "../Carousel/carousel.css";
 import {
 	Carousel,
 	CarouselItem,
 	CarouselControl,
 	CarouselIndicators,
-	CarouselCaption
+	CarouselCaption,
 } from "reactstrap";
 
 const items = [
 	{
 		src: `${teamphoto}`,
 		altText: "Slide 1",
-		caption: ""
-	}
+		caption: "",
+	},
 	// {
 	// 	src: `${photo}`,
 	// 	altText: "Slide 2",
@@ -29,7 +27,7 @@ const items = [
 	// }
 ];
 
-const CarouselJumbo = props => {
+const CarouselJumbo = (props) => {
 	const [activeIndex, setActiveIndex] = useState(0);
 	const [animating, setAnimating] = useState(false);
 
@@ -45,12 +43,12 @@ const CarouselJumbo = props => {
 		setActiveIndex(nextIndex);
 	};
 
-	const goToIndex = newIndex => {
+	const goToIndex = (newIndex) => {
 		if (animating) return;
 		setActiveIndex(newIndex);
 	};
 
-	const slides = items.map(item => {
+	const slides = items.map((item) => {
 		return (
 			<CarouselItem
 				onExiting={() => setAnimating(true)}

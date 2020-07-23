@@ -31,7 +31,11 @@ const Footer = () => {
 					>
 						<FontAwesomeIcon icon={faFacebookSquare} color="white" size="2x" />
 					</a>
-					<a href="https://www.instagram.com/ace.gymnastics/" target="_blank">
+					<a
+						href="https://www.instagram.com/ace.gymnastics/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<FontAwesomeIcon icon={faInstagram} color="white" size="2x" />
 					</a>
 				</div>
