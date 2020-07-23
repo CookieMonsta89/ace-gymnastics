@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faFacebookSquare,
-	faInstagram
+	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -27,6 +27,7 @@ const Footer = () => {
 					<a
 						href="https://www.facebook.com/ACE-Gymnastics-101806134601903/"
 						target="_blank"
+						rel="noopener noreferrer"
 					>
 						<FontAwesomeIcon icon={faFacebookSquare} color="white" size="2x" />
 					</a>

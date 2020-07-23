@@ -7,6 +7,7 @@ const MidPageBreak = () => {
 			<a
 				href="https://app.jackrabbitclass.com/jr3.0/ParentPortal/Login?orgID=539177"
 				target="_blank"
+				rel="noopener noreferrer"
 			>
 				<button className="button account-button">Parent Portal</button>
 			</a>
