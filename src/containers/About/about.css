@@ -57,6 +57,7 @@
 	.about-section {
 		width: 100%;
 		padding: 0;
+		align-items: center;
 	}
 
 	.about-img-section {
