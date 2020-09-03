@@ -12,7 +12,7 @@ import { connect } from "react-redux";
 // import AboutContainer from "./containers/About/About";
 // import StaffContainer from "./containers/Staff/Staff";
 import ReactGA from "react-ga";
-import { getPrograms } from "./helpers/getAllPrograms";
+// import { getPrograms } from "./helpers/getAllPrograms";
 
 class App extends React.Component {
 	constructor(props) {
