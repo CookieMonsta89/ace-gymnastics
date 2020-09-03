@@ -1,4 +1,3 @@
-import axios from "axios";
 export const FETCH_ALL_PROGRAMS = "FETCH_ALL_PROGRAMS";
 
 export function getAllPrograms(request) {
