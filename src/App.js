@@ -23,7 +23,13 @@ class App extends React.Component {
 	}
 
 	componentDidMount = () => {
-		getPrograms(539177);
+		const requestOptions = {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify({ OrgId: 539177 }),
+		};
+
+		fetch("/OpeningsJson", requestOptions).then((response) => response.json());
 		// initializes Google Analytics
 		this.initializeReactGA();
 	};

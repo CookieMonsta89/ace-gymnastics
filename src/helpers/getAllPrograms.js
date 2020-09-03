@@ -2,7 +2,7 @@ import { getAllPrograms } from "../store/actions/jackRabbitActions";
 import axios from "axios";
 
 export const getPrograms = () => {
-	axios({
+	return axios({
 		method: "POST",
 		url: "https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsJson",
 		headers: {},
@@ -10,6 +10,7 @@ export const getPrograms = () => {
 			OrgId: 539177,
 		},
 	}).then((result) => {
-		getAllPrograms(result);
+		console.log("result", result);
+		getAllPrograms(result.data.rows);
 	});
 };
