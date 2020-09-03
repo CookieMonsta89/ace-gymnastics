@@ -7,10 +7,12 @@ import ContactHeader from "./components/Header/contactheader";
 import Footer from "./components/Footer/footer";
 import Copyright from "./components/Footer/copyright";
 import ScrollAnimation from "react-animate-on-scroll";
-// import ProgramContainer from "./containers/Programs/program";
+import ProgramContainer from "./containers/Programs/program";
+import { connect } from "react-redux";
 // import AboutContainer from "./containers/About/About";
 // import StaffContainer from "./containers/Staff/Staff";
 import ReactGA from "react-ga";
+import { getPrograms } from "./helpers/getAllPrograms";
 
 class App extends React.Component {
 	constructor(props) {
@@ -21,6 +23,7 @@ class App extends React.Component {
 	}
 
 	componentDidMount = () => {
+		getPrograms(539177);
 		// initializes Google Analytics
 		this.initializeReactGA();
 	};
@@ -43,6 +46,7 @@ class App extends React.Component {
 				<ContactHeader />
 				<Header toggleMenu={this.toggleMenu} />
 				<Route exact path="/" component={Home} />
+				<Route exact path="/Programs" component={ProgramContainer} />
 				<Footer />
 				<Copyright />
 			</ScrollAnimation>
@@ -50,7 +54,13 @@ class App extends React.Component {
 	}
 }
 
+const mapStateToProps = (state) => ({
+	message: state.rootReducer.message,
+});
+
+const mapDispatchToProps = {};
+
 // add this to line 47 to use portal announcement
 // {menuOpen ? null : <PortalContainer />}
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);

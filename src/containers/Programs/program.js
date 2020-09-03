@@ -7,7 +7,18 @@ class ProgramContainer extends React.Component {
 	}
 
 	render() {
-		return <div>Under Construction</div>;
+		return (
+			<div>
+				<div>
+					<h1>Program</h1>
+				</div>
+				<div>
+					<select>
+						<option value="">Choose Program</option>
+					</select>
+				</div>
+			</div>
+		);
 	}
 }
 

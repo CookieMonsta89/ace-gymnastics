@@ -12,7 +12,7 @@ class Header extends React.Component {
 		super(props);
 		this.state = {
 			toggleNav: "link-tab",
-			activeLink: "Home"
+			activeLink: "Home",
 		};
 	}
 
@@ -22,7 +22,7 @@ class Header extends React.Component {
 				toggleNav: "link-tab",
 				activeLink: window.location.href.split("/")[
 					window.location.href.split("/").length - 1
-				]
+				],
 			});
 		}
 	};
@@ -31,7 +31,7 @@ class Header extends React.Component {
 		const { toggleNav } = this.state;
 		const { toggleMenu } = this.props;
 		this.setState({
-			toggleNav: toggleNav === "link-tab" ? "link-tab-open" : "link-tab"
+			toggleNav: toggleNav === "link-tab" ? "link-tab-open" : "link-tab",
 		});
 		toggleMenu();
 	};
@@ -40,24 +40,24 @@ class Header extends React.Component {
 		this.setState({
 			activeLink: window.location.href.split("/")[
 				window.location.href.split("/").length - 1
-			]
+			],
 		});
 	};
 
-	activeObject = active => {
+	activeObject = (active) => {
 		const newActive = window.location.href.split("/")[
 			window.location.href.split("/").length - 1
 		];
 		let object = {
 			borderBottom: "1px solid white",
-			fontWeight: "bold"
+			fontWeight: "bold",
 		};
 		let object2 = {
 			borderBottom: "0px solid white",
 			background: "white",
 			color: "#9a0b0b",
 			fontWeight: "bold",
-			transition: "all .5s"
+			transition: "all .5s",
 		};
 		if (newActive === active && window.innerWidth > 768) {
 			return object;
@@ -132,7 +132,7 @@ class Header extends React.Component {
 						>
 							<Link
 								className="link"
-								// to="Programs"
+								to="Programs"
 								style={this.activeObject("Programs")}
 							>
 								PROGRAMS
