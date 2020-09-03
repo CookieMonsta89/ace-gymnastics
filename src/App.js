@@ -12,7 +12,7 @@ import { connect } from "react-redux";
 // import AboutContainer from "./containers/About/About";
 // import StaffContainer from "./containers/Staff/Staff";
 import ReactGA from "react-ga";
-// import { getPrograms } from "./helpers/getAllPrograms";
+import { getPrograms } from "./helpers/getAllPrograms";
 
 class App extends React.Component {
 	constructor(props) {
@@ -23,17 +23,21 @@ class App extends React.Component {
 	}
 
 	componentDidMount = () => {
-		const requestOptions = {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify({ OrgId: 539177 }),
-		};
+		// const requestOptions = {
+		// 	method: "POST",
+		// 	headers: { "Content-Type": "application/json" },
+		// 	body: JSON.stringify({ OrgId: 539177 }),
+		// };
 
-		fetch("jr3.0/Openings/OpeningsJson", requestOptions).then((response) => {
-			response.json();
-		});
+		// fetch(
+		// 	"https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsJson",
+		// 	requestOptions
+		// ).then((response) => {
+		// 	response.json();
+		// });
 		// initializes Google Analytics
 		this.initializeReactGA();
+		getPrograms();
 	};
 
 	initializeReactGA = () => {

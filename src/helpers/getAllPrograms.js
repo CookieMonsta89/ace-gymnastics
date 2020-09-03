@@ -4,9 +4,9 @@ import axios from "axios";
 export const getPrograms = () => {
 	return axios({
 		method: "POST",
-		url: "https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsJson",
+		url: "jr3.0/Openings/OpeningsJson",
 		headers: {},
-		body: {
+		data: {
 			OrgId: 539177,
 		},
 	}).then((result) => {
