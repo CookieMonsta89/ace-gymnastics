@@ -29,7 +29,7 @@ class App extends React.Component {
 			body: JSON.stringify({ OrgId: 539177 }),
 		};
 
-		fetch("/jr3.0/Openings/OpeningsJson", requestOptions).then((response) => {
+		fetch("jr3.0/Openings/OpeningsJson", requestOptions).then((response) => {
 			response.json();
 		});
 		// initializes Google Analytics
