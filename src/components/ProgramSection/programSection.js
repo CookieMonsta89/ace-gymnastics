@@ -5,8 +5,11 @@ import program4 from "../../assets/program4comp.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 import { Link } from "react-router-dom";
 import "./programSection.css";
+import { useDispatch } from "react-redux";
+import { setActiveLink } from "../../store/actions/navigationActions";
 
 const ProgramSection = () => {
+	const dispatch = useDispatch();
 	return (
 		<div className="home-program">
 			<div className="program-section">
@@ -40,8 +43,12 @@ const ProgramSection = () => {
 			</div>
 			<div className="program-section-button">
 				<button className="button account-button">
-					<Link className="link" to="Programs">
-						PROGRAMS
+					<Link
+						className="link"
+						to="Programs"
+						onClick={() => dispatch(setActiveLink("Programs"))}
+					>
+						See More
 					</Link>
 				</button>
 			</div>
