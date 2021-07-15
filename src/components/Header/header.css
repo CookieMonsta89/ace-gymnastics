@@ -75,17 +75,8 @@ img {
 	font-size: 0.75vw;
 }
 
-.navlink:hover:first-child {
-	border-bottom: 1px solid white;
-	margin-bottom: 5px;
-	transition: all 0.5s;
-	cursor: pointer;
-}
-
 .navlink:hover {
-	border-bottom: 1px solid white;
-	margin-bottom: 5px;
-	transition: all 0.5s;
+	border-bottom: 2px solid white;
 }
 
 a.link {

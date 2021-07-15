@@ -68,11 +68,15 @@
 		align-items: center;
 	}
 
+	.jackrabbit-mobile a {
+		width: 40%;
+	}
+
 	.jackrabbit-mobile .button {
 		font-size: 4vw;
 		box-shadow: 0px 3px #00000045;
 		transition: all 0.5s;
-		width: 200px;
+		width: 100%;
 	}
 }
 

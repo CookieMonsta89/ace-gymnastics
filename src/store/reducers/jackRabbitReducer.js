@@ -7,7 +7,6 @@ const initialState = {
 const rootReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case FETCH_ALL_PROGRAMS:
-			console.log("reducer here", action);
 			return { program_options: action.payload };
 		default:
 			return state;

@@ -20,9 +20,10 @@ class Header extends React.Component {
 		if (prevState.activeLink !== this.state.activeLink) {
 			this.setState({
 				toggleNav: "link-tab",
-				activeLink: window.location.href.split("/")[
-					window.location.href.split("/").length - 1
-				],
+				activeLink:
+					window.location.href.split("/")[
+						window.location.href.split("/").length - 1
+					],
 			});
 		}
 	};
@@ -38,18 +39,20 @@ class Header extends React.Component {
 
 	selectActiveLink = () => {
 		this.setState({
-			activeLink: window.location.href.split("/")[
-				window.location.href.split("/").length - 1
-			],
+			activeLink:
+				window.location.href.split("/")[
+					window.location.href.split("/").length - 1
+				],
 		});
 	};
 
 	activeObject = (active) => {
-		const newActive = window.location.href.split("/")[
-			window.location.href.split("/").length - 1
-		];
+		const newActive =
+			window.location.href.split("/")[
+				window.location.href.split("/").length - 1
+			];
 		let object = {
-			borderBottom: "1px solid white",
+			borderBottom: "2px solid white",
 			fontWeight: "bold",
 		};
 		let object2 = {
