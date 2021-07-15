@@ -1,5 +1,5 @@
 import React from "react";
-import "./Program.css";
+import "./program.css";
 import BannerTitle from "../../components/BannerTitle/bannertitle";
 import ProgramCards from "../../components/ProgramCards/programcards";
 
