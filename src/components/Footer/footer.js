@@ -4,6 +4,7 @@ import {
 	faFacebookSquare,
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import "./footer.css";
 
 const Footer = () => {
 	return (

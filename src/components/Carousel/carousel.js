@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import teamphoto from "../../assets/teamphotocomp.jpg";
+import photo from "../../assets/photo.jpg";
+import photo2 from "../../assets/photo2.jpg";
 import "../Carousel/carousel.css";
 import {
 	Carousel,
@@ -18,13 +20,13 @@ const items = [
 	// {
 	// 	src: `${photo}`,
 	// 	altText: "Slide 2",
-	// 	caption: ""
-	// }
+	// 	caption: "",
+	// },
 	// {
 	// 	src: `${photo2}`,
 	// 	altText: "Registration Now Open",
-	// 	caption: ""
-	// }
+	// 	caption: "",
+	// },
 ];
 
 const CarouselJumbo = (props) => {

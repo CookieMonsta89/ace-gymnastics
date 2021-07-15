@@ -1,0 +1,72 @@
+/* Styles below are for program section of home page */
+.home-program {
+	display: flex;
+	width: 100%;
+	background: #efefef;
+	padding: 100px 6%;
+	flex-direction: column;
+}
+
+.program-section {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.program-section h3 {
+	color: var(--red-color);
+}
+
+.program-image {
+	width: 25%;
+}
+
+.program-image img {
+	height: auto;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1500px) {
+	.program-section-button .button {
+		font-size: 1.2vw;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.program-section-button .button {
+		font-size: 1.5vw;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.home-program {
+		padding: 40px 5%;
+	}
+
+	.program-section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.program-image {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.program-image img {
+		margin: 10px 0;
+	}
+
+	.program-section-button .button {
+		font-size: 2.5vw;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.program-section-button .button {
+		font-size: 4vw;
+	}
+}
+
+/* Styles above are for program section of home page */

@@ -1,6 +1,7 @@
 import React from "react";
 import gymfloor from "../../assets/gym-floorcomp.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
+import "./aboutsection.css";
 
 const AboutSection = () => {
 	return (

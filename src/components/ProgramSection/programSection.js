@@ -3,6 +3,8 @@ import program1 from "../../assets/program1comp.jpg";
 import program2 from "../../assets/program2comp.jpg";
 import program4 from "../../assets/program4comp.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
+import { Link } from "react-router-dom";
+import "./programSection.css";
 
 const ProgramSection = () => {
 	return (
@@ -37,7 +39,11 @@ const ProgramSection = () => {
 				</ScrollAnimation>
 			</div>
 			<div className="program-section-button">
-				<button className="button account-button">View More</button>
+				<button className="button account-button">
+					<Link className="link" to="Programs">
+						PROGRAMS
+					</Link>
+				</button>
 			</div>
 		</div>
 	);

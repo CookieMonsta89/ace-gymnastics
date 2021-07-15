@@ -1,4 +1,5 @@
 import React from "react";
+import "./midPageBreak.css";
 
 const MidPageBreak = () => {
 	return (

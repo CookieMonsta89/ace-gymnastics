@@ -1,6 +1,6 @@
 import React from "react";
 import CarouselJumbo from "../../components/Carousel/carousel";
-import AboutSection from "../../components/AboutSection/AboutSection";
+import AboutSection from "../../components/AboutSection/aboutsection";
 import ProgramSection from "../../components/ProgramSection/programSection";
 import MidPageBreak from "../../components/MidPageBreak/midPage.js";
 import StaffSection from "../../components/StaffSection/staffSection.js";

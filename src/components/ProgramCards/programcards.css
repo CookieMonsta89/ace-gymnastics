@@ -1,0 +1,29 @@
+.program-cards {
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	margin: 50px 0;
+}
+
+.program-cards .account-button {
+	width: 70%;
+}
+
+.program-photo {
+	width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+	.program-cards {
+		flex-direction: column;
+	}
+
+	.program-cards .account-button {
+		font-size: 3vw;
+		width: 50%;
+	}
+
+	.program-photo {
+		width: 100%;
+	}
+}

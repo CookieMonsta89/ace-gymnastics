@@ -1,6 +1,6 @@
 import { getAllPrograms } from "../store/actions/jackRabbitActions";
 import axios from "axios";
-import store from "../store/store";
+import { store } from "../store/store";
 
 export const getPrograms = () => {
 	return axios({
