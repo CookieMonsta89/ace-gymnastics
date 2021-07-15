@@ -7,7 +7,7 @@ import ContactHeader from "./components/Header/contactheader";
 import Footer from "./components/Footer/footer";
 import Copyright from "./components/Footer/copyright";
 import ScrollAnimation from "react-animate-on-scroll";
-import ProgramContainer from "./containers/Programs/Program";
+import ProgramContainer from "./containers/Programs/program";
 import { connect } from "react-redux";
 import ReactGA from "react-ga";
 import { getPrograms } from "./helpers/getAllPrograms";
