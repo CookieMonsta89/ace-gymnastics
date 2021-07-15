@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import logofull from "../../assets/logofull.png";
-import { Link, withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Jackrabbit from "../../components/Jackrabbit/jackrabbit";

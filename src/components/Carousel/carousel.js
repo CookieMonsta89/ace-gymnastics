@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import teamphoto from "../../assets/teamphotocomp.jpg";
-import photo from "../../assets/photo.jpg";
-import photo2 from "../../assets/photo2.jpg";
 import "../Carousel/carousel.css";
 import {
 	Carousel,
