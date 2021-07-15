@@ -58,6 +58,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = {};
 
 // add this to line 47 to use portal announcement
+//
 // {menuOpen ? null : <PortalContainer />}
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
