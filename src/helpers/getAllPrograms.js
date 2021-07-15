@@ -4,13 +4,16 @@ import axios from "axios";
 export const getPrograms = () => {
 	return axios({
 		method: "POST",
-		url: "jr3.0/Openings/OpeningsJson",
-		headers: {},
+		url: "https://supermarche-chocolatine-97285.herokuapp.com/programs",
 		data: {
-			OrgId: 539177,
+			OrgId: process.env.REACT_APP_ORGID,
 		},
-	}).then((result) => {
-		console.log("result", result);
-		getAllPrograms(result.data.rows);
-	});
+	})
+		.then((result) => {
+			console.log(result);
+			getAllPrograms(result);
+		})
+		.catch((error) => {
+			console.log("catch", error);
+		});
 };

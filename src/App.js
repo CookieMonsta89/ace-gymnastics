@@ -23,19 +23,6 @@ class App extends React.Component {
 	}
 
 	componentDidMount = () => {
-		// const requestOptions = {
-		// 	method: "POST",
-		// 	headers: { "Content-Type": "application/json" },
-		// 	body: JSON.stringify({ OrgId: 539177 }),
-		// };
-
-		// fetch(
-		// 	"https://app.jackrabbitclass.com/jr3.0/Openings/OpeningsJson",
-		// 	requestOptions
-		// ).then((response) => {
-		// 	response.json();
-		// });
-		// initializes Google Analytics
 		this.initializeReactGA();
 		getPrograms();
 	};
