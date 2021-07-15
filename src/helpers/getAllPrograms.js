@@ -1,5 +1,6 @@
 import { getAllPrograms } from "../store/actions/jackRabbitActions";
 import axios from "axios";
+import store from "../store/store";
 
 export const getPrograms = () => {
 	return axios({
@@ -11,7 +12,7 @@ export const getPrograms = () => {
 	})
 		.then((result) => {
 			console.log(result);
-			getAllPrograms(result);
+			store.dispatch(getAllPrograms(result.data.rows));
 		})
 		.catch((error) => {
 			console.log("catch", error);
